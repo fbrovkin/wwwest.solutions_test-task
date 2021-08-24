@@ -1,0 +1,39 @@
+@media screen and (max-width: 900px) {
+    .benefits-cards__card {
+        flex-basis: calc(50% - 9px);
+    }
+    .our-production__upsell-products {
+        width: calc(50% - 9px);
+    }
+    .carousel-control {
+        display: none;
+    }
+    .carousel .carousel-indicators {
+        bottom: -40px;
+        transform: translateX(-50%);
+    }
+
+    .contacts {
+        padding: 10px;
+        flex-direction: column;
+        align-items: center;
+            &__logo {
+                padding-top: 50px;
+            }
+            &__title {
+            order: 1;
+            padding-top: 30px;
+            }
+            &__offer {
+            order: 2;
+            width: 90%;
+                &-text {
+                    white-space: normal;
+                }
+            }
+            &__button {
+                display: block;
+                margin: 0 auto;
+            }
+    }
+}

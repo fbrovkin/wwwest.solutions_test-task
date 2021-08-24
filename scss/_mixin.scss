@@ -1,0 +1,63 @@
+@mixin main-title {
+    color: $page-blue-text;
+    font-family: $secondary-font-700;
+    font-size: 48px;
+    line-height: 74px;
+}
+
+@mixin secondary-title($color) {
+    color: $color;
+    font-family: $secondary-font-700;
+    font-size: 20px;
+    letter-spacing: 2.42px;
+    line-height: 40px;
+    text-transform: uppercase;
+}
+
+@mixin third-title {
+    text-align: center;
+    font-family:$secondary-font-500;
+    font-size: 28px;
+    line-height: 40px;
+    letter-spacing: 4.4px;
+    @media screen and (max-width: 768px) {
+        font-size: 20px;
+    }
+
+}
+
+@mixin plain-text($color) {
+    color: $color;
+    font-family: $main-font-400;
+    font-size: 17px;
+    line-height: 32px;
+    white-space: pre-line;
+    @media screen and (max-width: 768px) {
+        font-size: 16px;
+    }
+}
+
+@mixin card-text {
+    font-family:$main-font-500;
+    font-size: 19px;
+    line-height: 32px;
+    letter-spacing: -0.4px; 
+}
+
+@mixin blue-btn {
+    color: $white;
+    font-family: $secondary-font-500;
+    font-size: 18px;
+    line-height: 26px;
+    text-align: center;
+    border-radius: 12px;
+    border: 1px solid $white;
+    background-color: #004fc7;
+    background-image: linear-gradient(#0c5cd6 0%, rgba(0, 56, 140, 0) 100%);
+    position: relative;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.21);
+        &:hover {
+            background-color: $white;
+            color: #004fc7;
+        }
+}

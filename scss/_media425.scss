@@ -1,0 +1,37 @@
+@media screen and (max-width: 425px) {
+    .header-content__image-img {
+        max-width: 75%;
+            &--top {
+                max-width: 60%;
+            }
+    }
+    .temperature {
+        padding: 0;
+            &-title {
+                max-width: 90%;
+                margin: 0 auto;
+            }
+            &-text--responsive-italic {
+                font-style: italic;
+            }
+    }
+    .benefits-cards__card {
+        padding-right: 20px;
+            &-icon-container {
+                min-width: 35%;
+            }
+    }
+    .list {
+        &-section {
+            &__list {
+                &-item {
+                    margin-top: 50px;
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+    .contacts__link {
+        display: block;
+    }
+}

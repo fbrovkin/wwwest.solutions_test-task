@@ -1,0 +1,24 @@
+html {
+    font-size: 10px;
+}
+
+@font-face {
+    font-family: "Noto Sans Regular";
+    src: url(../dist/fonts/NotoSans-Regular.ttf);
+}
+@font-face {
+    font-family: "Noto Sans Medium";
+    src: url(../dist/fonts/NotoSans-Medium.ttf);
+}
+@font-face {
+    font-family: "Noto Sans SemiBold";
+    src: url(../dist/fonts/NotoSans-SemiBold.ttf);
+}
+@font-face {
+    font-family: "BBC Reith Sans Medium";
+    src: url(../dist/fonts/BBCReithSans_W_Md.woff2);
+}
+@font-face {
+    font-family: "BBC Reith Sans Bold";
+    src: url(../dist/fonts/BBCReithSansCd_W_Bd.woff2);
+}

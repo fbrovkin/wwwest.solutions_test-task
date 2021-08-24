@@ -1,0 +1,35 @@
+.footer {
+    padding: 50px 0;
+    border-top: 2px solid #eef0f4;
+        &__subtitle {
+            color: #a3adba;
+            font-family:$main-font-600;
+            font-size: 17px;
+            line-height: 32px;
+            letter-spacing: -0.4px;
+        }
+        &__link {
+            @include plain-text(#9eabbb);
+            text-decoration: none;
+            margin: 0;
+                &-telephone {
+                    text-decoration: none;
+                    color: #7c848d;
+                }
+                &-email {
+                    text-decoration: none;
+                }
+        }
+        &__shortlink {
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+            padding-left: 0;
+                &-item {
+                    min-width: 50%;
+                        &-link {
+                            text-decoration: underline;
+                        }
+                }
+        }
+}

@@ -1,0 +1,40 @@
+.contacts {
+    padding: 75px 0;
+    &__title {
+        padding-top: 75px;
+        width: 40%;
+        text-align: center;
+         &-slogan {
+        font-family: $secondary-font-700;
+        font-size: 34px;
+        line-height: 43px;
+        letter-spacing: -0.4px;
+        color: $page-blue-text;
+        }
+    }
+    &__offer {
+        width: 40%;
+        &-text {
+            @include plain-text($page-gray);
+            margin-bottom: 40px;
+        }
+    }
+    &__link {
+        text-decoration: none;
+    }
+    &__button {
+        width: 306px;
+        height: 69px;
+        @include blue-btn;
+            &::before {
+                position: absolute;
+                content:url(../dist/img/button-arrow.png);
+                top: 50%;
+                transform: translateY(-50%);
+                left: 0;
+            }
+    }
+    &__logo {
+        padding-top: 70px;
+    }
+}

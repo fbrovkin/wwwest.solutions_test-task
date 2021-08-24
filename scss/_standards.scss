@@ -1,0 +1,17 @@
+.standards {
+    &-img {
+        width: 100%;
+    }
+    &__info {
+        background: linear-gradient(180deg, #163DA2 0%, #003584 100%);
+        width: 100%;
+        color: #fbfdff;
+        text-align: left;
+        &-title {
+            @include secondary-title($white)
+        }
+        &-text {
+            @include plain-text($white)
+        }
+    }
+}

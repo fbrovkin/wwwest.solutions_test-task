@@ -1,0 +1,94 @@
+@media screen and (max-width: 768px) {
+    .header-content {
+        padding-bottom: 0;
+            &__image-img {
+                margin-top: 50px;
+                margin-bottom: 50px;
+                &--top {
+                    margin-bottom: 50px;
+                    max-width: 100%;
+                }
+            }
+            &__info {
+                &-title {
+                    font-size: 34px;
+                    line-height: 57px;
+                }
+                &-text {
+                    margin-left: 20px;
+                }
+                &-subtitle {
+                    max-width: 70%;
+                    margin: 0 auto;
+                    margin-bottom: 45px;
+                }
+            }
+    }
+    .temperature {
+        padding: 30px 0;
+    }
+    
+    .standards__info {
+        &-content {
+        padding: 40px 15px;
+        }
+        &-title {
+            font-size: 18px;
+            margin-bottom: 40px;
+        }
+        &-text {
+            font-size: 16px;
+            white-space: normal;
+        }
+    }
+    .list-section {
+        padding: 10px 0 10px 20px;
+            &__list {
+                white-space: normal;
+            }
+    }
+    .benefits {
+        padding-top: 25px;
+            &-cards__card {
+                flex-basis: calc(100% - 9px)
+            }
+    }
+    .carousel .carousel-indicators {
+        width: 74px;
+    }
+    .our-production {
+        padding-top: 30px;
+            &__title {
+                margin-bottom: 40px;
+            }
+            &__upsell {
+                padding-top: 60px;
+                    &-products {
+                        width: calc(100% - 9px)
+                    }
+            }
+    }
+    .our-benefits {
+        padding-bottom: 65px;
+    }
+    .footer {
+        &__shortlink-item {
+            min-width: 100%;
+        }
+        .footer-info-box {
+            margin-top: 17px;
+        }
+    }
+
+    .contacts {
+    &__title{
+        width: 95%;
+        &-slogan {
+            margin-bottom: 30px;
+        }
+    }
+    &__logo-img {
+        transform: scale(0.8);
+    }
+}
+}

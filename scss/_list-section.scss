@@ -1,0 +1,44 @@
+.list {
+    padding-top: 43px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 16px;
+        &-container {
+            padding: 12px;
+            margin-top: 56px
+        }
+        &__title {
+            @include third-title;
+        }
+        &-section {
+            padding: 10px 50px 10px 130px;
+                &__list {
+                @include plain-text($page-gray);
+                counter-reset: item;
+                list-style-type: none;
+                    &--right {
+                        counter-reset: item-count 7;
+                        margin-left: 20px;
+                    }
+                    &-item {
+                        max-width: 460px;
+                        position: relative;
+                        line-height: 36px;
+                            &:before {
+                                content: counter(item) " ";
+                                counter-increment: item;
+                                color: $black;
+                                position: absolute;
+                                border: 1px solid $black;
+                                width: 16px;
+                                left: -36px;
+                                top: 11px;
+                                height: 16px;
+                                line-height: 16px;
+                                border-radius: 50%;
+                                text-align: center;
+                                font-size: 9px;
+                            }
+                    }
+            }
+        }
+}
